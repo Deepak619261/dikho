@@ -28,7 +28,11 @@
       "Bash(taskkill /F /IM node.exe)",
       "Bash(pkill -f \"next dev\")",
       "Bash(vercel --version)",
-      "Bash(git commit -m 'fix: lazy Supabase client init + vercel.json for monorepo *)"
+      "Bash(git commit -m 'fix: lazy Supabase client init + vercel.json for monorepo *)",
+      "Bash(supabase --version)",
+      "Bash(pnpm config *)",
+      "Bash(npx supabase *)",
+      "Bash(git commit -m 'feat: Supabase init + initial schema migration *)"
     ],
     "additionalDirectories": ["c:\\Deepak ArYa\\SMB\\apps\\web\\app"]
   }
