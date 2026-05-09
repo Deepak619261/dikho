@@ -1,4 +1,4 @@
-export { supabase, createAdminClient } from './client'
+export { getSupabaseClient, createAdminClient } from './client'
 export type {
   Tenant,
   Site,

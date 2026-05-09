@@ -1,83 +1,156 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-sans sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-[32px] sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-center font-mono text-sm/6 sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{' '}
-            <code className="rounded bg-black/[.05] px-1 py-0.5 font-mono font-semibold dark:bg-white/[.06]">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            className="bg-foreground text-background flex h-10 items-center justify-center gap-2 rounded-full border border-solid border-transparent px-4 text-sm font-medium transition-colors hover:bg-[#383838] sm:h-12 sm:w-auto sm:px-5 sm:text-base dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="flex h-10 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-4 text-sm font-medium transition-colors hover:border-transparent hover:bg-[#f2f2f2] sm:h-12 sm:w-auto sm:px-5 sm:text-base md:w-[158px] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="min-h-screen bg-white">
+      {/* Nav */}
+      <nav className="border-border flex items-center justify-between border-b px-6 py-4">
+        <div className="flex items-center gap-2">
+          <span className="text-primary text-2xl font-bold">Dikho</span>
+          <span className="text-muted-foreground font-devanagari text-lg">दिखो</span>
         </div>
-      </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-[24px]">
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://wa.me/919999999999"
+          className="bg-primary hover:bg-primary/90 rounded-full px-4 py-2 text-sm font-semibold text-white transition-colors"
         >
-          <Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} />
-          Learn
+          Free mein shuru karein →
         </a>
+      </nav>
+
+      {/* Hero */}
+      <section className="mx-auto max-w-2xl px-6 py-16 text-center">
+        <div className="text-primary mb-6 inline-block rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold tracking-widest uppercase">
+          Chandigarh ke salons ke liye
+        </div>
+        <h1 className="text-foreground mb-4 text-4xl leading-tight font-bold sm:text-5xl">
+          Google pe <span className="text-primary">Dikho.</span>
+          <br />
+          Customers tak <span className="text-accent">Pahuncho.</span>
+        </h1>
+        <p className="text-muted-foreground mb-2 text-lg">
+          WhatsApp pe 10 minute — aapka business online.
+        </p>
+        <p className="text-muted-foreground mb-10 text-base">
+          Free website. Google listing. WhatsApp booking.
+          <br />
+          Pehla customer aaye tab pay karein — ₹299/month.
+        </p>
+
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://wa.me/919999999999"
+          className="bg-primary hover:bg-primary/90 inline-block rounded-2xl px-8 py-4 text-lg font-bold text-white shadow-lg transition-all hover:scale-105 active:scale-100"
         >
-          <Image aria-hidden src="/window.svg" alt="Window icon" width={16} height={16} />
-          Examples
+          WhatsApp pe FREE shuru karein 🚀
         </a>
+        <p className="text-muted-foreground mt-4 text-sm">
+          No app download. No form fill. Sirf WhatsApp.
+        </p>
+      </section>
+
+      {/* How it works */}
+      <section className="bg-orange-50 px-6 py-14">
+        <div className="mx-auto max-w-2xl">
+          <h2 className="text-foreground mb-10 text-center text-2xl font-bold">
+            Kaise kaam karta hai?
+          </h2>
+          <div className="flex flex-col gap-6">
+            {[
+              {
+                step: '1',
+                title: 'WhatsApp karo',
+                desc: 'Hamare number pe message karo. Hum 10 sawal poochenge.',
+              },
+              {
+                step: '2',
+                title: 'Website ban jaati hai',
+                desc: 'AI aapke liye professional website bana deta hai — bilkul free.',
+              },
+              {
+                step: '3',
+                title: 'Google pe dikh jaao',
+                desc: 'Aapki website Google Maps pe link hoti hai. Customers directly book karte hain.',
+              },
+              {
+                step: '4',
+                title: 'Customer aaye tab pay karo',
+                desc: '"1 naya customer aaya" — sirf tab ₹299 mein unlock karo unka number.',
+              },
+            ].map(({ step, title, desc }) => (
+              <div key={step} className="flex items-start gap-4">
+                <div className="bg-primary flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-lg font-bold text-white">
+                  {step}
+                </div>
+                <div>
+                  <p className="text-foreground text-base font-semibold">{title}</p>
+                  <p className="text-muted-foreground mt-0.5 text-sm">{desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing callout */}
+      <section className="mx-auto max-w-xl px-6 py-14 text-center">
+        <h2 className="text-foreground mb-4 text-2xl font-bold">
+          Pehle customer aane do, phir sochna
+        </h2>
+        <p className="text-muted-foreground mb-6">
+          Website, Google listing, WhatsApp chat — sab free. Jab pehla customer booking try kare,
+          sirf tab ₹299/month.
+        </p>
+        <div className="border-primary/20 rounded-2xl border bg-orange-50 p-6 text-left">
+          <p className="text-primary mb-3 text-sm font-semibold tracking-wide uppercase">
+            Free plan mein milega
+          </p>
+          {[
+            'Professional website',
+            'Google pe listing help',
+            'WhatsApp click-to-chat',
+            'Lead counter (locked)',
+          ].map((f) => (
+            <p key={f} className="text-foreground flex items-center gap-2 py-1 text-sm">
+              <span className="text-success font-bold">✓</span> {f}
+            </p>
+          ))}
+          <hr className="border-border my-4" />
+          <p className="text-accent mb-3 text-sm font-semibold tracking-wide uppercase">
+            ₹299/month mein unlock hoga
+          </p>
+          {[
+            'Customer ka naam + number',
+            'WhatsApp pe seedha connect',
+            'Review collection',
+            'Monthly Google posts',
+          ].map((f) => (
+            <p key={f} className="text-foreground flex items-center gap-2 py-1 text-sm">
+              <span className="text-accent font-bold">✓</span> {f}
+            </p>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA bottom */}
+      <section className="bg-primary px-6 py-14 text-center">
+        <h2 className="mb-3 text-3xl font-bold text-white">Aaj shuru karein</h2>
+        <p className="mb-8 text-base text-orange-100">
+          Chandigarh ke 50+ salons already Dikho pe hain.
+        </p>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="https://wa.me/919999999999"
+          className="text-primary inline-block rounded-2xl bg-white px-8 py-4 text-lg font-bold shadow-lg transition-all hover:bg-orange-50"
         >
-          <Image aria-hidden src="/globe.svg" alt="Globe icon" width={16} height={16} />
-          Go to nextjs.org →
+          WhatsApp karo — FREE hai 🙏
         </a>
+        <p className="font-devanagari mt-4 text-sm text-orange-200">
+          Google pe Dikho. Customers tak Pahuncho.
+        </p>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-muted-foreground border-border border-t px-6 py-6 text-center text-xs">
+        <p>
+          © 2025 Dikho — <span className="font-devanagari">दिखो</span> — Made with ❤️ in Chandigarh
+        </p>
       </footer>
-    </div>
+    </main>
   )
 }
