@@ -1,0 +1,45 @@
+{
+  "bot": {
+    "greeting": "Namaste 🙏 Dikho mein swagat hai! Aapke business ka 10 minute mein FREE Google website banayenge. Shuru karein? (Haan / Nahi)",
+    "ask_name": "Aapke business ka naam kya hai?",
+    "ask_vertical": "Aapka business kis type ka hai?",
+    "ask_address": "Aapke business ka address kya hai? (Location share karein ya type karein)",
+    "ask_hours": "Aapke business ke khaalne ke timing kya hain?",
+    "ask_services": "Aapki top 3 services kya hain?",
+    "ask_photos": "3 photos bhejein: 1 dukaan ke bahar, 1 andar, 1 kaam ka sample",
+    "ask_language": "Aapki website kis bhaasha mein honi chahiye? (Hindi / English / Hinglish)",
+    "generating": "Aapka website ban raha hai... ⏳",
+    "complete": "Aapka website live hai! 🎉 {url} — Share kijiye apne customers ke saath!",
+    "resume": "Wapas aaye! Jahan chhoda tha wahan se shuru karein?",
+    "stop_confirm": "Theek hai. Hum yahan ruk jaate hain. Kisi bhi waqt 'hello' karein.",
+    "invalid_input": "Maafi chahta hoon, samajh nahi aaya. Dobara try karein.",
+    "invalid_photo": "Kripya ek image (JPG/PNG) bhejein. Dobara try karein.",
+    "waitlist": "Aap {vertical} ke waitlist mein hain! Jab available hoga tab batayenge.",
+    "faq_not_found": "Is baare mein thoda time lagega. Abhi setup pe chaltein hain!"
+  },
+  "dashboard": {
+    "leads_tab": "Leads",
+    "site_tab": "Website",
+    "reviews_tab": "Reviews",
+    "settings_tab": "Settings",
+    "unlock_cta": "₹{price} mein unlock karein",
+    "leads_counter": "Is mahine {count} naye",
+    "locked_lead": "Naya booking request",
+    "billing_reminder": "Aapki agli billing {date} ko hogi",
+    "share_site": "Website share karein"
+  },
+  "site": {
+    "book_now": "Abhi Book Karein",
+    "whatsapp_chat": "WhatsApp pe baat karein",
+    "hours": "Kaam ke Waqt",
+    "services": "Hamaari Services",
+    "photos": "Gallery",
+    "reviews": "Customers kya kehte hain",
+    "about": "Hamare Baare Mein",
+    "find_us": "Hum Kahan Hain"
+  },
+  "errors": {
+    "generic": "Kuch galat ho gaya. Kripya dobara try karein.",
+    "phone_invalid": "Kripya ek valid 10-digit Indian mobile number enter karein."
+  }
+}

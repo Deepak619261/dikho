@@ -1,0 +1,45 @@
+{
+  "bot": {
+    "greeting": "Welcome to Dikho 🙏 We'll build your FREE Google website in 10 minutes. Shall we start? (Yes / No)",
+    "ask_name": "What's your business name?",
+    "ask_vertical": "What type of business do you run?",
+    "ask_address": "What's your business address? (Share your location or type it)",
+    "ask_hours": "What are your operating hours?",
+    "ask_services": "What are your top 3 services?",
+    "ask_photos": "Please send 3 photos: 1 storefront, 1 inside, 1 work sample",
+    "ask_language": "What language should your website be in? (Hindi / English / Hinglish)",
+    "generating": "Generating your website... ⏳",
+    "complete": "Your website is live! 🎉 {url} — Share it with your customers!",
+    "resume": "Welcome back! Continue where we left off?",
+    "stop_confirm": "Understood. We'll pause here. Say 'hello' anytime to continue.",
+    "invalid_input": "Sorry, I didn't get that. Let's try again.",
+    "invalid_photo": "Please send an image (JPG/PNG). Try again.",
+    "waitlist": "You're on the waitlist for {vertical}! We'll notify you when it's available.",
+    "faq_not_found": "I'm not sure about that. Let me get back to our setup!"
+  },
+  "dashboard": {
+    "leads_tab": "Leads",
+    "site_tab": "Site",
+    "reviews_tab": "Reviews",
+    "settings_tab": "Settings",
+    "unlock_cta": "Unlock for ₹{price}",
+    "leads_counter": "{count} new this month",
+    "locked_lead": "New booking attempt",
+    "billing_reminder": "Your next billing is on {date}",
+    "share_site": "Share your site"
+  },
+  "site": {
+    "book_now": "Book Now",
+    "whatsapp_chat": "Chat on WhatsApp",
+    "hours": "Business Hours",
+    "services": "Our Services",
+    "photos": "Gallery",
+    "reviews": "What customers say",
+    "about": "About Us",
+    "find_us": "Find Us"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "phone_invalid": "Please enter a valid 10-digit Indian mobile number."
+  }
+}

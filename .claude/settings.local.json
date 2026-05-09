@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(git --version)",
+      "Bash(pnpm --version)",
+      "Bash(git init *)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm create *)",
+      "Bash(New-Item -ItemType Directory -Force -Path \"c:\\\\Deepak ArYa\\\\SMB\\\\apps\\\\web\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force -Path \"c:\\\\Deepak ArYa\\\\SMB\\\\apps\\\\bot\")",
+      "Bash(New-Item -ItemType Directory -Force -Path \"c:\\\\Deepak ArYa\\\\SMB\\\\packages\\\\db\")",
+      "Bash(New-Item -ItemType Directory -Force -Path \"c:\\\\Deepak ArYa\\\\SMB\\\\packages\\\\i18n\")",
+      "Bash(Write-Host \"Directories created\")",
+      "Bash(pnpm add *)",
+      "Bash(pnpm exec *)",
+      "Bash(mkdir -p \"c:/Deepak ArYa/SMB/apps/web/app/[tenant]\" && echo \"done\")",
+      "Bash(pnpm --filter web typecheck)",
+      "Bash(pnpm --filter web build)",
+      "Bash(timeout 8 pnpm dev)",
+      "Bash(git config *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git add *)"
+    ],
+    "additionalDirectories": ["c:\\Deepak ArYa\\SMB\\apps\\web\\app"]
+  }
+}
