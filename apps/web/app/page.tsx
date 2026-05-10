@@ -81,42 +81,49 @@ function Nav() {
           style={{ display: 'flex', gap: 30, fontSize: 14, color: '#2A2521', fontWeight: 500 }}
           className="hidden md:flex"
         >
-          {['Features', 'Pricing', 'Examples', 'Help'].map((l) => (
-            <a key={l} href="#" style={{ color: '#2A2521', textDecoration: 'none' }}>
-              {l}
+          {[
+            { label: 'Features', href: '#how-it-works' },
+            { label: 'Pricing', href: '#pricing' },
+            { label: 'Examples', href: '#testimonials' },
+            { label: 'Help', href: '#faq' },
+          ].map((l) => (
+            <a key={l.label} href={l.href} style={{ color: '#2A2521', textDecoration: 'none' }}>
+              {l.label}
             </a>
           ))}
         </div>
 
         {/* Actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-          <button
+          <a
+            href="/dashboard"
             style={{
-              background: 'transparent',
-              border: 0,
               fontSize: 14,
               fontWeight: 500,
               color: '#14110D',
               padding: '8px 12px',
-              cursor: 'pointer',
+              textDecoration: 'none',
             }}
           >
             Login
-          </button>
-          <button
+          </a>
+          <a
+            href="https://wa.me/919999999999"
+            target="_blank"
+            rel="noopener noreferrer"
             style={{
               background: '#14110D',
               color: '#fff',
-              border: 0,
               padding: '10px 18px',
               borderRadius: 10,
               fontWeight: 600,
               fontSize: 14,
-              cursor: 'pointer',
+              textDecoration: 'none',
+              display: 'inline-block',
             }}
           >
             Start free
-          </button>
+          </a>
         </div>
       </div>
     </nav>
@@ -304,25 +311,28 @@ function Hero() {
 
           {/* CTAs */}
           <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 28 }}>
-            <button
+            <a
+              href="https://wa.me/919999999999"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
                 display: 'flex',
                 alignItems: 'center',
                 gap: 10,
                 padding: '16px 24px',
                 borderRadius: 14,
-                border: 0,
-                cursor: 'pointer',
                 background: '#25D366',
                 color: '#fff',
                 fontSize: 16,
                 fontWeight: 700,
                 boxShadow: '0 14px 28px -10px rgba(37,211,102,.55)',
+                textDecoration: 'none',
               }}
             >
               {WA_ICON} WhatsApp pe shuru karein
-            </button>
-            <button
+            </a>
+            <a
+              href="?tenant=sharma-salon"
               style={{
                 padding: '16px 24px',
                 borderRadius: 14,
@@ -331,11 +341,13 @@ function Hero() {
                 color: '#14110D',
                 fontSize: 15,
                 fontWeight: 600,
-                cursor: 'pointer',
+                textDecoration: 'none',
+                display: 'inline-flex',
+                alignItems: 'center',
               }}
             >
               Live demo dekhein →
-            </button>
+            </a>
           </div>
 
           <div style={{ fontSize: 13, color: '#94887A', marginBottom: 32 }}>
@@ -455,7 +467,7 @@ function HowItWorks() {
     },
   ]
   return (
-    <section style={{ background: '#F4ECDD', padding: '80px 32px' }}>
+    <section id="how-it-works" style={{ background: '#F4ECDD', padding: '80px 32px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div
           style={{
@@ -540,7 +552,7 @@ function Pricing() {
     'Hindi + English + 8 more languages',
   ]
   return (
-    <section style={{ background: '#FBF6EE', padding: '80px 32px' }}>
+    <section id="pricing" style={{ background: '#FBF6EE', padding: '80px 32px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <div
           style={{
@@ -703,22 +715,26 @@ function Pricing() {
                 </div>
               ))}
             </div>
-            <button
+            <a
+              href="https://wa.me/919999999999"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{
+                display: 'block',
                 width: '100%',
                 padding: '16px',
+                textAlign: 'center',
                 background: '#F26B1F',
                 color: '#fff',
-                border: 0,
                 borderRadius: 14,
                 fontWeight: 700,
                 fontSize: 16,
-                cursor: 'pointer',
+                textDecoration: 'none',
                 boxShadow: '0 12px 30px -10px rgba(242,107,31,.55)',
               }}
             >
               Start 7-day free trial
-            </button>
+            </a>
             <div style={{ textAlign: 'center', fontSize: 12, color: '#9C8C7A', marginTop: 12 }}>
               UPI · Card · Net banking · No lock-in
             </div>
@@ -753,7 +769,7 @@ function Testimonials() {
     },
   ]
   return (
-    <section style={{ background: '#F4ECDD', padding: '80px 32px' }}>
+    <section id="testimonials" style={{ background: '#F4ECDD', padding: '80px 32px' }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
         <h2
           style={{
@@ -832,7 +848,7 @@ function FAQ() {
     },
   ]
   return (
-    <section style={{ background: '#FBF6EE', padding: '80px 32px' }}>
+    <section id="faq" style={{ background: '#FBF6EE', padding: '80px 32px' }}>
       <div style={{ maxWidth: 700, margin: '0 auto' }}>
         <h2
           style={{
@@ -958,24 +974,26 @@ function BottomCTA() {
           <br />
           Aap kab aa rahe hain?
         </p>
-        <button
+        <a
+          href="https://wa.me/919999999999"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             display: 'inline-flex',
             alignItems: 'center',
             gap: 12,
             padding: '18px 32px',
             borderRadius: 16,
-            border: 0,
-            cursor: 'pointer',
             background: '#25D366',
             color: '#fff',
             fontSize: 17,
             fontWeight: 700,
             boxShadow: '0 14px 36px -10px rgba(37,211,102,.5)',
+            textDecoration: 'none',
           }}
         >
           {WA_ICON} WhatsApp pe FREE shuru karein
-        </button>
+        </a>
         <p style={{ fontSize: 13, color: '#6B5F50', marginTop: 16 }}>
           7 din free · Card ki zaroorat nahin · 1 tap cancel
         </p>
