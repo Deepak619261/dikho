@@ -800,7 +800,7 @@ function Testimonials() {
                   fontStyle: 'italic',
                 }}
               >
-                "{c.quote}"
+                &ldquo;{c.quote}&rdquo;
               </p>
               <div>
                 <div style={{ fontWeight: 700, fontSize: 14, color: '#14110D' }}>{c.name}</div>
